@@ -26,7 +26,7 @@ export const Auth = () => {
             } else {
                 await createUserWithEmailAndPassword(auth, email, password);
                 setSuccess("Account created successfully!");
-                navigate('/chat'); // Navigate to chat after sign up
+                navigate(`/chat`); // Navigate to chat after sign up
             }
         } catch (e) {
             setError(e.message);
